@@ -84,7 +84,9 @@ def main():
         return model
 
     start_time = time.perf_counter()
-    model = torch.load("resnet152.pth")
+    
+    model = torchvision.models.resnet152()
+    model.load_state_dict(torch.load("resnet152_weights.pth"))
 
     for parameter in model.parameters():
         parameter.requires_grad = False
@@ -95,7 +97,7 @@ def main():
     torch.save(model, "resnet152.pth")
     end_time = time.perf_counter()
 
-    print(f"Resnet 152: {end_time - start_time} secs")
+    print(f"{end_time - start_time} secs")
 
 if __name__ == "__main__":
     main()
