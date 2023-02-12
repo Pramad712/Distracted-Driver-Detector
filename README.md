@@ -9,7 +9,7 @@ A distracted driver detector that uses deep learning and makes a "beep" sound if
 ### • Pygame 2.1.3dev8 for sounds
 
 # Bugs and Issues
-### • No bugs have been found so far. However, PLEASE USE THIS APPLICATION IN A CAR! Look at the images in the "sample_images" folder to find a good camera placement.
+### • No bugs have been found so far. However, PLEASE USE THIS APPLICATION ONLY IN A CAR! Look at the images in the "sample_images" folder to find a good camera placement.
 
 # How it Works
 First, all training and test data become bluer by blending the image with a solid blue image. Next, a ResNet-152 model is initiated that has been pre-trained on the ImageNet dataset by PyTorch. It is then trained on almost 17,000 images and tested on a tenth of that six times and saved on a file. Lastly, when the user wants to turn on the detector, OpenCV will be used to get live images from the camera and send it to the model. If the driver is distracted for at least two seconds, a “beep” sound will be played using Pygame.
