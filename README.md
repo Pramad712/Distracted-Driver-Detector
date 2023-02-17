@@ -1,5 +1,5 @@
 # Distracted Driver Detector
-A distracted driver detector that uses deep learning and makes a "beep" sound if the driver has been distracted for at least two seconds. Made for 2023 Ardenwood Elementary School Science and Engineering Fair (6th Grade).
+A distracted driver detector that uses deep learning and makes a "beep" sound if the driver has been distracted for at least two seconds. 
 
 ## Dependencies (latest as of when this project was created)
 ### • Python 3.10 (3.11 was too new to support most of the following libraries)
