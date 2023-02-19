@@ -26,6 +26,8 @@ Even though there are only two possible outcomes per image (distracted and not d
 The graphs shown are both confusion matrices, which display the accuracy of a model whenever it predicts a certain class. The columns are the predicted class, and the rows are the actual class. In the first graph, the classes are ordered in the same ordering as mentioned above. All values are sub-75, except for the correct predictions, which are over 1,200, which shows significant accuracy. Since the second one has just two rows and columns for distracted and not distracted, more statistics is added. The bottom-left most number is the sensitivity, or the number of true positives divided by the number of predicted positives, and the number to the left of it is the specificity, or the number of true negatives divided by the number of predicted negatives. The top-right most number is precision, the number of true-positives divided by the number of actual positives, and the one below it is the negative predictive value, or the number of true-negatives divided by the number of actual negatives. Lastly, the bottom-most number is the accuracy - 98%. All these statistics are 98% or higher, except for the specificity and negative predictive value, which are still about 90% and 93% respectively.
 
 # Sample Predictions
+Note: The images are screeshots, so the borders are off.
+
 ![image](https://user-images.githubusercontent.com/77818951/219971544-42e65807-b08a-4e4d-9a14-ff7debe00e70.png)
 ![image](https://user-images.githubusercontent.com/77818951/219971789-4057c7f1-0c78-42df-871c-f285314d0e56.png)
 ![image](https://user-images.githubusercontent.com/77818951/219971579-f6f7205a-3e40-4332-b3cf-4d26b406f95f.png)
