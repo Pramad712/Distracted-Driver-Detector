@@ -36,4 +36,4 @@ Note: The images are screeshots, so the borders are off.
 ![image](https://user-images.githubusercontent.com/77818951/219971762-f6c94e9c-13e1-4901-987d-59899693731a.png)
 
 # Improvements
-### • Put the code on a small device such as a Rasberry Pi and vibrate the steering wheel/seat instead of making an annoying sound.
+### • Put the code on a small device such as a Rasberry Pi and vibrate the steering wheel/seat instead of making a sound.
