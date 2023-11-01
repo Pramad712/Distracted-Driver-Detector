@@ -9,6 +9,7 @@ def distraction_sound():
     pygame.init()
     pygame.mixer.init()
     pygame.mixer.Sound("beep.wav").play()
+    time.sleep(0.5)
 
 def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
