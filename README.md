@@ -9,7 +9,7 @@ A distracted driver detector that uses deep learning and makes a "beep" sound if
 ### • Pygame 2.1 for sounds
 
 # Warnings, Instructions and Notes
-### • There will be many more updates over time. However, once its completed, *only use this application only inside a car*. Look at the images in the "data.zip" folder to find a good camera placement.
+### • *Only use this application only inside a car*. Look at the images in the "data.zip" folder to find a good camera placement.
 ### • Only run the file "main.py". If you run "deep_learning_model.py", then it will take hours to train the model.
 ### • Only 750 images were put in the "data" folder. However, over 17,000 images were used for training & testing. If you want the entire dataset, see [this](https://www.kaggle.com/datasets/rightway11/state-farm-distracted-driver-detection). Look at the "train" folder under the "imgs" folder only. Credits to Kaggle and State Farm for making the dataset.
 
