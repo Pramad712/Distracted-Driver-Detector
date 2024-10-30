@@ -11,7 +11,7 @@ A distracted driver detector that uses deep learning and makes a "beep" sound if
 # Warnings, Instructions and Notes
 ### • *Only use this application only inside a car*. Look at the images in the "data.zip" folder to find a good camera placement.
 ### • Only run the file "main.py". If you run "deep_learning_model.py", then it will take hours to train the model.
-### • Only 750 images were put in the "data" folder. However, over 17,000 images were used for training & testing. If you want the entire dataset, see [this](https://www.kaggle.com/datasets/rightway11/state-farm-distracted-driver-detection). Look at the "train" folder under the "imgs" folder only. Credits to Kaggle and State Farm for making the dataset.
+### • Only 750 images were put in the "data" folder. However, over 17,000 images were used for training & testing. If you want the entire dataset, see [this](https://www.kaggle.com/competitions/state-farm-distracted-driver-detection/overview). Look at the "train" folder under the "imgs" folder only. Credits to Kaggle and State Farm for making the dataset.
 
 # How it Works
 First, all training and test data become bluer by blending the image with a solid blue image. Next, a ResNet-152 model is initiated that has been pre-trained on the ImageNet dataset by PyTorch. It is then trained on almost 17,000 images and tested on a tenth of that six times and saved on a file. Lastly, when the user wants to turn on the detector, OpenCV will be used to get live images from the camera and send it to the model. If the driver is distracted for at least two seconds, a “beep” sound will be played using Pygame.
@@ -37,3 +37,6 @@ Note: The images are screeshots, so the borders are off.
 
 # Improvements
 ### • Put the code on a small device such as a Rasberry Pi and vibrate the steering wheel/seat instead of making a sound.
+### • Use a GPU to speed up the training process and make a better and more accurate (yes, this model was trained without one). That is why I had to keep the computer running all night every day for an entire month!
+
+### Credits to State Farm for their [amazing dataset](https://www.kaggle.com/competitions/state-farm-distracted-driver-detection/overview) which this AI model took full advantage of.
